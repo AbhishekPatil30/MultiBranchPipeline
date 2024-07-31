@@ -1,5 +1,5 @@
 pipeline {
-    agent {label 'tomcatagent'}
+    agent any
     environment {
         // Define environment variables here
         BRANCH_NAME = "${env.BRANCH_NAME}"
