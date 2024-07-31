@@ -22,7 +22,7 @@ pipeline {
         }
         stage('Git PUSH Stage') {
             steps {
-               ech 'this is git PUSH stage'
+               echo 'this is git PUSH stage'
                    }
         }
     }
