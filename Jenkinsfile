@@ -17,7 +17,7 @@ pipeline {
         }
         stage('Git TEST Stage') {
             steps {
-                echo 'this is git TEST stage'
+                echo 'this is git TEST stagee'
             }
         }
         stage('Git PUSH Stage') {
