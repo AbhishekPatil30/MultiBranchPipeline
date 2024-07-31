@@ -1,0 +1,29 @@
+pipeline {
+    agent {label 'tomcatagent'}
+    environment {
+        // Define environment variables here
+        BRANCH_NAME = "${env.BRANCH_NAME}"
+    }
+    stages {
+        stage('Git CHECKOUT Stage') {
+            steps {
+                echo 'this is git checkout stage'
+            }
+        }
+        stage('BUILD Stage') {
+            steps {
+                echo 'this is git Build Stage'
+            }
+        }
+        stage('Git TEST Stage') {
+            steps {
+                echo 'this is git TEST stage'
+            }
+        }
+        stage('Git PUSH Stage') {
+            steps {
+               ech 'this is git PUSH stage'
+                   }
+        }
+    }
+}
